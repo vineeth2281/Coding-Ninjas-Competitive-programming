@@ -1,0 +1,18 @@
+ int FirstInd(int input[], int size, int x,int start){
+     if(start>size){
+         return -1;
+     }
+     if(input[start]==x){
+         return start;
+     }
+     
+
+
+     return FirstInd(input,size,x,start+1);
+
+ }
+
+int firstIndex(int input[], int size, int x) {
+    FirstInd(input,size,x, 0);
+
+}
